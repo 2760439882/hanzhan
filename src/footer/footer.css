@@ -1,0 +1,45 @@
+footer{
+    position: relative;
+    min-width: 100%;
+    background-color: #101a26;
+    padding: 50px 0 120px 0;
+    color: rgba(255,255,255,.7294117647058823);
+}
+
+.footer-box{
+    display: flex;
+}
+
+.footer-item{
+    flex: 3;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.footer-item h4{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.14);
+    padding: 0 0 8px;
+    font-weight: 500;
+}
+.copy-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0d141c;
+}
+
+.copy{
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.copy p{
+    text-align: center;
+}
+
+.copy span{
+   font-size: 16px;
+   padding: 0 10px;
+}
