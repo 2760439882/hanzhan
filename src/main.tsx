@@ -16,13 +16,13 @@
 //   document.getElementById('root')
 // );
 
-import React from 'react'
+// import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 
 
-import Footer from './footer/footer.tsx'
-import Header from './Layout/header/header.tsx'
+// import Footer from './footer/footer.tsx'
+// import Header from './Layout/header/header.tsx'
 import './index.css'
 
 
