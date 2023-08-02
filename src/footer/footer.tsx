@@ -1,7 +1,7 @@
 import React from "react"
 import './footer.css'
 
-function FooterTop() {
+const FooterTop: React.FC = () =>{
     interface Person {
         id: number;
         game: string;
@@ -55,10 +55,10 @@ function FooterTop() {
     );
 }
 
-function FooterBottom() {
+const FooterBottom: React.FC = () =>{
     const data ={
         copy: '@copy',
-        author: '逍遥&&萧熙',
+        author: '逍遥&&萧熙&&捍战赛事组',
         time: '2020-2023'
     }
     return (
