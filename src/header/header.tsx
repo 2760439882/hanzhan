@@ -84,6 +84,7 @@ class Header extends React.Component {
                     <div className="container">
                         <div className="menu">
                             <Logo></Logo>
+                            
                             <Nav></Nav>
                         </div>
                     </div>
