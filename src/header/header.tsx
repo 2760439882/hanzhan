@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
             <img src="src\assets\img\HZ.png" alt="" />
         </Link> */}
 
-            <a href="index.html">
+            <a href="/">
                 <img src="src\assets\img\HZ.png" alt="" />
             </a>
         </div>
@@ -60,9 +60,7 @@ const Nav: React.FC = () => {
         <li key={item.id}>
             <Link to={item.to}>{item.name}</Link>
         </li>
-
     ));
-
 
     return (
         <div className="menu-area">
@@ -90,7 +88,6 @@ class Header extends React.Component {
                         </div>
                     </div>
                 </header>
-                
             </>
         )
     }

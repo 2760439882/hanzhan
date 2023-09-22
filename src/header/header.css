@@ -77,20 +77,22 @@ header {
         text-align: center;
         top: 40px;
         right: 0;
+        /* display: none; */
     }
 
     .menu-area ul {
+        position: fixed;
         flex-direction: column;
+        right: 15px;
+        top: 60px;
         /* display: none; */
         /* transform: translate(100%, 0); */
- 
     }
 
     .menu-area ul li {
         margin: 0;
-        padding: 0;
+        padding: 5px 0;
         height: 20px;
-        /* display: none; */
         height: 30px;
         line-height: 30px;
     }
