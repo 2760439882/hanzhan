@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from 'react-router-dom';
 
 import './header.css'
@@ -21,6 +21,12 @@ const Nav: React.FC = () => {
         id: number;
         name: string;
         to: string;
+    }
+    const [isVisible, setIsVisible] = useState(false);
+
+    let isShow = {
+        show : 'menu-show',  
+        hidden : 'menu-heddin'  
     }
 
     let Props: Person[] = [
@@ -60,13 +66,20 @@ const Nav: React.FC = () => {
         <li key={item.id}>
             <Link to={item.to}>{item.name}</Link>
         </li>
-
     ));
 
 
     return (
         <div className="menu-area">
-            <ul>
+            <img src="src\assets\img\btn.png" className="menu-btn" onClick={() => setIsVisible(!isVisible)}/>
+                
+            {/* <ul className={(menuList.isShow == true?menuList.show:menuList.heddin)}>
+                {ListItems}
+            </ul> */}
+            {/* <ul>
+                {ListItems}
+            </ul> */}
+            <ul className={ isVisible?isShow.show:isShow.hidden }>
                 {ListItems}
             </ul>
         </div>
@@ -74,12 +87,9 @@ const Nav: React.FC = () => {
 };
 
 
-
-
 class Header extends React.Component {
     // items = ['首页', '赛事', '战队','关于我们' , '工作人员', '诚邀令'];
     render() {
-
         return (
             <>
                 <header>
@@ -90,7 +100,6 @@ class Header extends React.Component {
                         </div>
                     </div>
                 </header>
-                
             </>
         )
     }

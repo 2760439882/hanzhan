@@ -55,15 +55,31 @@ header {
 }
 
 .menu-area ul {
-    display: flex;
+    /* display: flex; */
     list-style: none;
     margin: 0;
     padding: 0;
+
 }
 
 .menu-item {
     padding: 0 20px;
     line-height: 100px;
+}
+
+.menu-area img{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 50px;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.menu-show{
+    /* display: none; */
 }
 
 @media (max-width: 768px) {
@@ -75,11 +91,12 @@ header {
         position: absolute;
         width: 30%;
         text-align: center;
-        top: 40px;
+        top: 30px;
         right: 0;
     }
 
     .menu-area ul {
+        margin-top: 20px;
         flex-direction: column;
         /* display: none; */
         /* transform: translate(100%, 0); */
@@ -90,9 +107,21 @@ header {
         margin: 0;
         padding: 0;
         height: 20px;
+        width: 100%;
         /* display: none; */
         height: 30px;
         line-height: 30px;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .menu-show{
+        display: block ;
+    }
+    .menu-heddin{
+        display: none ;
     }
 }
 
